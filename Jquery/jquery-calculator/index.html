@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator using jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <h2>Simple Calculator</h2>
+        <table>
+            <tr>
+                <td colspan="2">Enter a number:</td>
+                <td colspan="3"><input type="number" name="num1" id="num1" placeholder="Enter the first Number" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" data-name="The Addition is " size="3" name="+" id="+" class="operator" readonly="readonly" value="+"></td>
+                <td><input type="text" data-name="The Subtraction is " size="3" name="-" id="-" class="operator" readonly="readonly" value="-"></td>
+                <td><input type="text" data-name="The Multiplication is " size="3" name="*" id="*" class="operator" readonly="readonly" value="*"></td>
+                <td><input type="text" data-name="The Division is " size="3" name="/" id="/" class="operator" readonly="readonly" value="/"></td>
+                <td><input type="text" data-name="The Modulus is " size="3" name="%" id="%" class="operator" readonly="readonly" value="%"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Enter a number:</td>
+                <td colspan="3"><input type="number" name="num2" id="num2" placeholder="Enter the second Number" /></td>
+            </tr>
+            <tr class="err">
+                <td colspan="5">
+                    <div style="border: 1px solid red;">Enter a valid input.</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="border: none;" colspan="2"><input type="button" name="calculate" id="calculate" value="Calculate"></td>
+            </tr>
+        </table>
+
+        <div class="resultContainer">
+            <br>
+            <div style="padding: 10px;" class="resultContent">
+                Result
+                <p id="answer"></p>
+            </div>
+        </div>
+
+    </form>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
